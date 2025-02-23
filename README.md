@@ -29,7 +29,7 @@ Some Params for you to use :)
 POST //account/login
 {
   "Email": "test@webapi.co.za",
-  "Password": "Vhusa@9611"
+  "Password": "roofisonfire"
 }
 
 GET /order/get/details/{OrderNumber}

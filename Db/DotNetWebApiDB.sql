@@ -99,7 +99,7 @@ CREATE TABLE `Users` (
 );
 
 INSERT INTO `Users` (`UserId`, `FirstName`, `LastName`, `DOB`, `Email`, `PhoneCode`, `PhoneNumber`, `Password`, `Role`, `CreatedAt`, `Gender`, `Newsletter`) VALUES
-('usr00001mbm6zew', 'Vhusani', 'The-Dev', '2023-12-05', 'test@webapi.co.za', '+27', '713456783', '$2a$12$E6ipvBWPA5UHpDw7xDE82OX9fXB5Qm82hWIWJby2zws7494B8Njo6', '0', '2023-12-27 23:16:09', 'M', 1);
+('usr00001mbm6zew', 'Vhusani', 'The-Dev', '2023-12-05', 'test@webapi.co.za', '+27', '713456783', '$2y$12$6rVB2WyX0ZXZTHewxuF0iOus5Qwn9VWLlaWAkmPJvqjH7jF8SZSQC', '0', '2023-12-27 23:16:09', 'M', 1);
 
 CREATE PROCEDURE `sp_getusers` ()   SELECT * FROM `themlive`.`Users`;
 
