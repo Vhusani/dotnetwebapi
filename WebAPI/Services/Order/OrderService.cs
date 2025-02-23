@@ -25,7 +25,7 @@ namespace WebAPI.Services.Order
             DynamicParameters dp = new DynamicParameters();
             dp.Add("p_OrderNo", OrderNumber);
             IDbConnection connection = ConnectionFactory.GetThemLive();
-            var SqlQuery = "SELECT DISTINCT * FROM order_details WHERE OrderNumber = @p_OrderNo";
+            var SqlQuery = "SELECT DISTINCT * FROM OrderDetails WHERE OrderNumber = @p_OrderNo";
             var result = await connection.QueryAsync<OrderDetails>(SqlQuery, dp,
                 commandType: CommandType.Text,
                 commandTimeout: int.MaxValue);

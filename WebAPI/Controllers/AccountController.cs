@@ -59,8 +59,8 @@ namespace WebAPI.Controllers
                         return Ok(response);
                     }
                     else
-                    {
-                        return Unauthorized();
+                    {   
+                        return Unauthorized("Incorrect email or password");
                     }
                 }
 
